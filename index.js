@@ -8,12 +8,7 @@ const cookieParser = require("cookie-parser");
 
 const app = express();
 app.use(bodyParser.json());
-app.use(
-  cors({
-    origin: "https://7-updown-frontned.vercel.app/",
-    credentials: true, // Allow credentials (cookies)
-  })
-);
+app.use(cors());
 app.use(cookieParser("1234"));
 app.use("/api/user", userRoutes);
 
