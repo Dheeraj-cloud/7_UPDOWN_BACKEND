@@ -3,7 +3,7 @@ const express = require("express");
 const jwt = require("jsonwebtoken");
 const router = express.Router();
 const cookieParser = require("cookie-parser");
-const User = require("../models/User");
+const User = require("../Models/User");
 require("dotenv").config();
 const JWT_SECRET = process.env.JWT_SECRET;
 router.use(cookieParser());
