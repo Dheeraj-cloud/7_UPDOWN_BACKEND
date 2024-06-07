@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://7-updown-frontned.vercel.app/",
     credentials: true, // Allow credentials (cookies)
   })
 );
